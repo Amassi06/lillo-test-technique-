@@ -14,9 +14,10 @@ Ce projet reste néanmoins une bonne base de système de facturation développé
 
 ## Stack technique
 
-- **Backend** : Django
+- **Backend** : Django + Django REST Framework
 - **Base de données** : SQLite
 - **Frontend** : HTML/CSS
+- **Documentation API** : Swagger (drf-spectacular)
 
 ## Installation
 
@@ -25,6 +26,14 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+
+## Documentation API
+
+La documentation interactive de l'API est disponible sur :
+- **Swagger UI** : `http://localhost:8000/api/docs/`
+- **Schema OpenAPI** : `http://localhost:8000/api/schema/`
+
+Vous pouvez y tester directement les endpoints et voir tous les paramètres disponibles.
 
 ---
 
