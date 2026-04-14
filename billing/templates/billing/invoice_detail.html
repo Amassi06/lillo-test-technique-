@@ -1,0 +1,31 @@
+{% extends 'billing/base.html' %}
+
+{% block content %}
+<h1>Détail de la facture #{{ invoice.id }}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produit</th>
+      <th>Prix unitaire</th>
+      <th>Quantité</th>
+      <th>Total ligne</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in invoice.items.all %}
+      <tr>
+        <td>{{ item.product.name }}</td>
+        <td>{{ item.product.price }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.line_total }}</td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="4">Aucun produit dans cette facture.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<p><strong>Nombre total de produits :</strong> {{ invoice.total_products }}</p>
+<p><strong>Total à payer :</strong> {{ invoice.total_amount }}</p>
+{% endblock %}

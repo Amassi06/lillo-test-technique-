@@ -1,0 +1,36 @@
+{% extends 'billing/base.html' %}
+
+{% block content %}
+<h1>Produits</h1>
+<a href="{% url 'billing:product_create' %}">Créer un produit</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Date de péremption</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.expiration_date }}</td>
+        <td class="actions">
+          <a href="{% url 'billing:product_update' product.id %}">Modifier</a>
+          <a href="{% url 'billing:product_delete' product.id %}">Supprimer</a>
+        </td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="5">Aucun produit.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% include 'billing/pagination.html' with page_obj=page_obj %}
+{% endblock %}
