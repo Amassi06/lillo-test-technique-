@@ -1,24 +1,62 @@
-# 📊 Système de Gestion de Facturation
+# Système de Gestion de Facturation - Application Django Professionnelle
 
-##  À propos
+## Pourquoi vous devriez me choisir comme développeur
 
-J'aurais vraiment aimé avoir plus de temps pour enrichir ce projet avec davantage de fonctionnalités :
-- Tests automatisés
-- Authentification et permissions
-- Export PDF des factures
-- Dashboard analytique
-- Paiements intégrés
+### Motivé et déterminé
+Je ne suis pas juste un alternant qui exécute des tâches. Je suis **constamment engagé** à améliorer mes compétences et à livrer du **code de qualité**, même face aux contraintes de temps.
 
-Malgré ces limitations, ce projet me permet de montrer mes compétences fondamentales en développement web. J'aimerais en discuter lors d'un entretien pour développer sur l'architecture, les choix techniques et mes ambitions pour l'avenir.
+### ⚡ Productif et autonome
+Mes réalisations en entreprise le prouvent : j'ai développé des applications complètes qui sont **actuellement utilisées en production** et plus de 80 avis google le prouvent. 
+
+### 🎓 Techniquement solide
+- React / Node.js
+- Gestion de bases de données
+- Design UX/UI
+- Architecture logicielle
+- Python
+
+Je suis actuellement en alternance en tant que développeur et je termine mon parcours cet été. Je suis **très motivé** et **persuadé que je serai un atout majeur pour votre entreprise**. Cette conviction ne vient pas de nulle part : je l'ai déjà prouvée dans mon entreprise actuelle où j'ai développé plusieurs projets complets et livré des solutions de qualité professionnelle.
+
+Ce projet de gestion de facturation en est un excellent exemple. Malgré le temps limité face à mes autres responsabilités, j'ai démontré ma capacité à créer une **application fonctionnelle, moderne et bien architecturée**.
+
+### Mes réalisations
+
+- **Application Django complète** : Système de facturation avec API REST et interface web moderne
+- **Portfolio professionnel** : [aimassi.dev](https://aimassi.dev) - Découvrez tous mes projets
+- **Projet entreprise innovant dont je suis tres fier** : [matissefood.aimassi.dev](https://matissefood.aimassi.dev) - Plateforme React/Node.js pour augmenter la réputation des entreprises via les avis Google
+- **Développement en production** : Code livré en entreprise, utilisé par de vrais clients
+- **Productivité** : Je livre du code de qualité même sous contrainte de temps
 
 ---
 
-##  Fonctionnalités principales
-###  Gestion des Produits
-###  Création et Suivi des Factures
-###  API REST avec Documentation Interactive
-###  Interface Moderne et Responsive
+## 📸 Aperçu visuel de l'application
 
+### Projet en entreprise 
+![matisse food](https://i.imgur.com/gsQSgci.png)
+
+### Documentation Swagger - API Interactive
+![Swagger API](https://i.imgur.com/BgZpQFT.png)
+
+### Gestion des Produits
+![Page d'accueil](https://i.imgur.com/AgKPBgi.png)
+
+### Création d'un Produit
+![Liste des produits](https://i.imgur.com/DpSmCcm.png)
+
+### Création de Facture
+![Création facture](https://i.imgur.com/VpGjeF6.png)
+
+### Détail d'une Facture
+![Détail facture](https://i.imgur.com/jlyV1lk.png)
+
+---
+
+##  Points forts de cette implémentation
+
+1. **Design professionnel** - Interface moderne avec Tailwind CSS
+2. **API CRUD complète** - Endpoints RESTful pour toutes les opérations (GET, POST, PUT, PATCH, DELETE)
+3. **Documentation automatique** - Swagger UI intégrée et prête à l'emploi
+4. **Responsive** - Fonctionne parfaitement sur tous les appareils
 ---
 
 ##  Stack technique
@@ -26,17 +64,14 @@ Malgré ces limitations, ce projet me permet de montrer mes compétences fondame
 | Composant | Technologie |
 |-----------|-------------|
 | **Backend** | Django |
-| **Documentation API** |  Swagger UI |
+| **API REST** | Django REST Framework |
+| **Documentation API** | Swagger UI |
 | **Base de données** | SQLite3 |
-| **Frontend** | HTML5 + CSS3 |
+| **Frontend** | HTML5 + CSS3 (Tailwind CSS) |
 
 ---
 
-## 🚀 Installation et Lancement
-
-### Prérequis
-- Python 3.9+
-- pip ou conda
+##  Installation et Lancement
 
 ### Étapes
 
@@ -44,54 +79,32 @@ Malgré ces limitations, ce projet me permet de montrer mes compétences fondame
 
 cd trustia-test-technique
 
+# 2. Créer un environnement virtuel
 python -m venv venv
-
 source venv/bin/activate  # Sur Windows: venv\Scripts\activate
 
+# 3. Installer les dépendances
 pip install -r requirements.txt
 
+# 4. Appliquer les migrations
 python manage.py migrate
 
+# 5. Lancer le serveur
 python manage.py runserver
 ```
 
-L'application sera disponible sur `http://localhost:8000`
+L'application sera disponible sur **`http://localhost:8000`**
+**Swagger UI** : [http://localhost:8000/api/docs/](http://localhost:8000/api/docs/)
 
 ---
 
-## 📚 Documentation API
+## 📞 Pour discuter davantage
 
-### Accès à la documentation interactive
-
-La documentation complète de l'API est disponible via Swagger UI :
-
-- **Swagger UI** : [http://localhost:8000/api/docs/](http://localhost:8000/api/docs/)
-
+### 🌐 Découvrez mes réalisations
+- **Portfolio complet** : [aimassi.dev](https://aimassi.dev)
+- **Projet React/Node.js de réputation** : [matissefood.aimassi.dev](https://matissefood.aimassi.dev)
 ---
 
-##  Aperçu de l'application
+**Merci de votre intérêt pour ce projet et pour moi !**
 
-### Page d'accueil et Navigation
-![Page d'accueil](https://via.placeholder.com/800x400?text=Ajouter+votre+image+ici)
-*Remplacez ce lien par l'URL de votre screenshot*
-
-### Gestion des Produits
-![Liste des produits](https://via.placeholder.com/800x400?text=Liste+des+produits)
-*Remplacez ce lien par l'URL de votre screenshot*
-
-### Création de Facture
-![Création facture](https://via.placeholder.com/800x400?text=Créer+une+facture)
-*Remplacez ce lien par l'URL de votre screenshot*
-
-### Détail d'une Facture
-![Détail facture](https://via.placeholder.com/800x400?text=Détail+de+la+facture)
-*Remplacez ce lien par l'URL de votre screenshot*
-
-### Documentation Swagger
-![Swagger API](https://via.placeholder.com/800x400?text=Documentation+Swagger)
-*Remplacez ce lien par l'URL de votre screenshot*
-
-### Autre
-
-
-**Merci de votre intérêt ! 🙏**
+J'ai hâte de pouvoir discuter avec vous et de vous montrer que je serai un véritable atout pour votre équipe. Connectons-nous dès que possible ! 🙏
